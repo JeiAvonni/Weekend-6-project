@@ -1,0 +1,10 @@
+.shop-header {
+    background-image: url("https://th.bing.com/th/id/OIP.trdm2p_tuOpFedTi5Jnc8AHaFo?w=212&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7");
+    background-size: cover;
+    height: 700px;
+    color: rgb(247, 246, 249); 
+}
+
+.shop-stats {
+    color: white; 
+}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="row mt-5 p-5 shadow rounded border border-primary w-80">
+        <div class="col d-flex">
+            <img src="https://th.bing.com/th/id/OIP.tuUzE1Z_MSJ5JPXXHkoEMQHaKx?w=135&h=196&c=7&r=0&o=5&dpr=1.5&pid=1.7" class='img-fluid ' alt="" srcset="">
+        </div>
+        <div class="col">
+            <form action="" class="row g-3" method="POST">
+                {{ form.hidden_tag() }}
+                <h3>Register Now!</h3>
+                <div class="col-md-6">
+                    {{ form.first_name.label }}
+                    {{ form.first_name(class='form-control mt-2', placeholder='Elsa') }}
+                </div>
+                <div class="col-md-6">
+                    {{ form.last_name.label }}
+                    {{ form.last_name(class='form-control mt-2', placeholder='kristoff') }}
+                </div>
+                <div class="col-12">
+                    {{ form.username.label }}
+                    {{ form.username(class='form-control mt-2', placeholder='ElsaAnna' ) }}
+                    {% for error in form.username.errors %}
+                        <span class="err-msg"> {{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{ form.email.label }}
+                    {{ form.email(class='form-control mt-2', placeholder='WeLoveOlaf@gmail.com' ) }}
+                    {% for error in form.email.errors %}
+                        <span class="err-msg"> {{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-6">
+                    {{ form.password.label }}
+                    {{ form.password(class='form-control mt-2', placeholder='make it special!' ) }}
+                    {% for error in form.password.errors %}
+                        <span class="err-msg"> {{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-6">
+                    {{ form.confirm_password.label }}
+                    {{ form.confirm_password(class='form-control mt-2', placeholder='let it snow!' ) }}
+                    {% for error in form.confirm_password.errors %}
+                        <span class="err-msg"> {{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="col-12">
+                    {{ form.submit(class='btn btn-primary') }}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
