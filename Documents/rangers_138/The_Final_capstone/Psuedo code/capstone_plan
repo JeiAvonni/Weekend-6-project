@@ -1,0 +1,41 @@
+---- Final Capstone ----
+Welcome to my aquarium!
+3d animals ( optional)
+Sign language api interpretation
+Spanish interpretation
+
+---- Requirments ----
+User Authentication
+Front End (with html/css/bootstrap/flask/react material-ui)
+Full CRUD Operations:
+Create (create information, post it to your database)
+Read (Display data from your data base)
+Update (update existing information in your database)
+Delete (delete information from your database)
+These should all be done with API calls via routes and requests we will make with Flask and React.
+
+---- Sign up ----
+First name
+Last name
+email address
+phone number for new lessons text alerts
+username 
+password
+ ---- Login ----
+ username or email
+ password
+
+  ---- Aquarium list and details----
+  Turtle, Shark, Seahorse, Dolphin, Stingray, Clownfish, Crustation, Sea turtle, and Queen angel fish
+  kid summed decsription
+  spanish visual and voice trascript api
+  ASL/ sign language voice api
+
+  ( Find a api website that I can make at least 150 api calls OR 300 api calls off of a month)
+
+  ----- ASL page -----
+  ----- Spanish page ----
+  ----- English / Basic learning page -----
+
+A api website with 100 free calls a day 
+https://rapidapi.com/smaster0019-1dkEfievv4/api/translator163/
